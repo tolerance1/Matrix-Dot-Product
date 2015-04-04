@@ -1,0 +1,60 @@
+Matrix size: 3
+Matrix1 init time: 0ms
+Matrix2 init time: 0ms
+Matrix multiplication time: 0ms
+Matrix2 transposition time: 0ms
+Transposed matrix multiplication time: 0ms
+
+M1
+0.132  0.459  0.219  
+0.679  0.935  0.519  
+0.0346 0.53   0.0077 
+
+M2
+0.0668 0.687  0.93   
+0.527  0.654  0.701  
+0.762  0.0475 0.328  
+
+RES
+0.417  0.401  0.516  
+0.934  1.1    1.46   
+0.287  0.37   0.406  
+
+tM2
+0.0668 0.527  0.762  
+0.687  0.654  0.0475 
+0.93   0.701  0.328  
+
+tRES
+0.417  0.401  0.516  
+0.934  1.1    1.46   
+0.287  0.37   0.406  
+
+Matrix size: 100
+Matrix1 init time: 0ms
+Matrix2 init time: 15ms
+Matrix multiplication time: 93ms
+Matrix2 transposition time: 0ms
+Transposed matrix multiplication time: 78ms
+
+Matrix size: 250
+Matrix1 init time: 46ms
+Matrix2 init time: 46ms
+Matrix multiplication time: 1593ms
+Matrix2 transposition time: 15ms
+Transposed matrix multiplication time: 1328ms
+
+Matrix size: 500
+Matrix1 init time: 218ms
+Matrix2 init time: 203ms
+Matrix multiplication time: 13828ms
+Matrix2 transposition time: 15ms
+Transposed matrix multiplication time: 10546ms
+
+Matrix size: 1000
+Matrix1 init time: 843ms
+Matrix2 init time: 828ms
+Matrix multiplication time: 116203ms
+Matrix2 transposition time: 62ms
+Transposed matrix multiplication time: 84328ms
+
