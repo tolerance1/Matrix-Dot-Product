@@ -31,30 +31,30 @@ tRES
 0.287  0.37   0.406  
 
 Matrix size: 100
-Matrix1 init time: 0ms
+Matrix1 init time: 15ms
 Matrix2 init time: 15ms
-Matrix multiplication time: 93ms
+Matrix multiplication time: 31ms
 Matrix2 transposition time: 0ms
-Transposed matrix multiplication time: 78ms
+Transposed matrix multiplication time: 46ms
 
 Matrix size: 250
-Matrix1 init time: 46ms
+Matrix1 init time: 62ms
 Matrix2 init time: 46ms
-Matrix multiplication time: 1593ms
-Matrix2 transposition time: 15ms
-Transposed matrix multiplication time: 1328ms
+Matrix multiplication time: 906ms
+Matrix2 transposition time: 0ms
+Transposed matrix multiplication time: 640ms
 
 Matrix size: 500
-Matrix1 init time: 218ms
-Matrix2 init time: 203ms
-Matrix multiplication time: 13828ms
-Matrix2 transposition time: 15ms
-Transposed matrix multiplication time: 10546ms
+Matrix1 init time: 234ms
+Matrix2 init time: 218ms
+Matrix multiplication time: 7906ms
+Matrix2 transposition time: 0ms
+Transposed matrix multiplication time: 5156ms
 
 Matrix size: 1000
-Matrix1 init time: 843ms
-Matrix2 init time: 828ms
-Matrix multiplication time: 116203ms
-Matrix2 transposition time: 62ms
-Transposed matrix multiplication time: 84328ms
+Matrix1 init time: 859ms
+Matrix2 init time: 875ms
+Matrix multiplication time: 64453ms
+Matrix2 transposition time: 31ms
+Transposed matrix multiplication time: 41203ms
 
