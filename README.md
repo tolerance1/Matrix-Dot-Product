@@ -12,4 +12,8 @@ The elements of matrix #2 in a straightforward multiplication are accessed rando
 
 The results for each size of the matrixes are then written to ‘results.txt’ file. This file already contains the reference measurements performed on a Windows XP SP3, AMD Sempron 2300+ 1,58GHz Socket A  processor, DDR400 memory, on the system start-up, with no programs running and LAN disabled.
 
-Note that multiplying two 1000 x 1000 matrixes is time consuming. On the aforementioned system it takes almost 2 minutes before transposition and near 1,5 minutes after. Also touching the console will pause the runtime and therefore distort the measurements.
+Things to note:
+
+* When using vector of vectors for matrix representation, to multiply two 1000 x 1000 matrixes on the aforementioned system it would take almost 2 minutes before transposition and near 1,5 minutes after.
+* After changing to a single vector for matrix representation, multiplication time of two 1000 x 1000 matrixes reduced to near 1 minute before transposition and near 40 seconds after.
+* Touching the console will pause the runtime and therefore distort the measurements.
