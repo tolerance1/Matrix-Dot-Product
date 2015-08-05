@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <chrono>
 #include <utility>
@@ -9,14 +8,9 @@
 #include "Message.h"
 #include "Auxilary.h"
 
-using std::cout;
-using std::endl;
 using std::vector;
 using std::pair;
-using std::chrono::time_point;
 using std::chrono::system_clock;
-using std::chrono::duration_cast;
-using std::chrono::milliseconds;
 
 
 int main()
@@ -28,37 +22,37 @@ int main()
     {
         Data data;
         data.size = *iter;
-        cout << message1 << data.size << endl;
+        displayMessage(message1, data.size);
 
         Matrix M1, M2, RES, tM2, tRES;
         resizeMatrix(M1, data.size);
         tRES = tM2 = RES = M2 = M1;
 
-        auto t1 = system_clock::now();
+        system_clock::time_point t1 = system_clock::now();
         initMatrix(M1, data.size);
         data.d1 = system_clock::now() - t1;
-        cout << message2 << duration_cast<milliseconds>(data.d1).count() << "ms" << endl;
+        displayMessage(message2, data.d1);
 
         t1 = system_clock::now();
         initMatrix(M2, data.size);
         data.d2 = system_clock::now() - t1;
-        cout << message3 << duration_cast<milliseconds>(data.d2).count() << "ms" << endl;
+        displayMessage(message3, data.d2);
 
         t1 = system_clock::now();
         matrixDot(M1, M2, RES, data.size);
         data.d3 = system_clock::now() - t1;
-        cout << message4 << duration_cast<milliseconds>(data.d3).count() << "ms" << endl;
+        displayMessage(message4, data.d3);
 
         tM2 = M2;
         t1 = system_clock::now();
         transposeMatrix(tM2, data.size);
         data.d4 = system_clock::now() - t1;
-        cout << message5 << duration_cast<milliseconds>(data.d4).count() << "ms" << endl;
+        displayMessage(message5, data.d4);
 
         t1 = system_clock::now();
         tranposedMatrixDot(M1, tM2, tRES, data.size);
         data.d5 = system_clock::now() - t1;
-        cout << message6 << duration_cast<milliseconds>(data.d5).count() << "ms" << endl << endl;
+        displayMessage(message6, data.d5, true);
 
         table.addData(data);
 
