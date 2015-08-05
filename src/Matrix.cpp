@@ -95,12 +95,12 @@ void writeMatrix(const string& name, const Matrix& matrix, const size_t size)
 
     if(output)//if successfully opened
     {
-        static bool stampAdded = false;
+        static bool headerAdded = false;
 
-        if(! stampAdded)
+        if(! headerAdded)
         {
-            addTimeStamp(output);
-            stampAdded = true;
+            addHeader(output);
+            headerAdded = true;
         }
 
         outputMatrix(output, name, matrix, size);
